@@ -12,10 +12,10 @@ const TodoSchema = new Schema({
         type:String,
         required:true
     },
-    // date: {
-    //     type:Date,
-    //     default:Date.now
-    // }
+    date: {
+        type:Date,
+        default:Date.now
+    }
 })
 
 module.exports = Todo = mongoose.model('todos', TodoSchema);
