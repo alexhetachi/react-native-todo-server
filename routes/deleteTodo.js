@@ -9,10 +9,10 @@ router.post('/', (req,res) => {
     Todo.findByIdAndRemove(id)
         // .sort({ date: -1 })
         .then(
-            console.log('removed')
-            // res.json(todos)
-        )
-
+            console.log('deleted')
+        ).catch(err => {
+            console.log(err)
+        })
 })
 
 module.exports = router;
