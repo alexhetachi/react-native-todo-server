@@ -5,7 +5,7 @@ const Todo = require('../models/Todo');
 
 
 router.post('/',  (req,res) => {
-    const {todo} = req.body;
+    const { userid, todo } = req.body;
 
     // console.log("it worked "+name)
 
@@ -17,6 +17,7 @@ router.post('/',  (req,res) => {
     }
 
     const newTodo = new Todo({
+        userid,
         todo
     });
 

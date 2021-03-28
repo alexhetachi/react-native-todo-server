@@ -4,6 +4,10 @@ const Schema = mongoose.Schema;
 
 //Create Schema
 const TodoSchema = new Schema({
+    userid: {
+        type:String,
+        required:true
+    },
     todo: {
         type:String,
         required:true
