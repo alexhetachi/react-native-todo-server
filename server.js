@@ -22,6 +22,7 @@ mongoose
 //routes
 app.use('/api/signup',require('./routes/api/signup'));
 app.use('/api/login',require('./routes/api/login'));
+app.use('/api/fetchTodos',require('./routes/fetchTodos'));
 
 
 // //Serve static asserts if in production
