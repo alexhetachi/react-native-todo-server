@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const Todo = require('../models/Todo');
-// const auth = require('../middleware/auth')
+const auth = require('../middleware/auth')
 
 
-router.post('/',  (req,res) => {
+router.post('/', auth, (req,res) => {
     const { userid, todo } = req.body;
 
     // console.log("it worked "+name)
