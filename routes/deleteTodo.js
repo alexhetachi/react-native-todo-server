@@ -4,7 +4,7 @@ const Todo = require('../models/Todo');
 
 
 router.post('/', (req,res) => {
-    const id = req.body
+    const {id} = req.body
     console.log(id)
     Todo.findByIdAndRemove(id)
         // .sort({ date: -1 })
