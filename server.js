@@ -23,7 +23,7 @@ mongoose
 app.use('/api/signup',require('./routes/api/signup'));
 app.use('/api/login',require('./routes/api/login'));
 app.use('/api/fetchTodos',require('./routes/fetchTodos'));
-
+app.use('/api/deleteTodo',require('./routes/deleteTodo'));
 
 // //Serve static asserts if in production
 // if(process.env.NODE_ENV === 'production'){
